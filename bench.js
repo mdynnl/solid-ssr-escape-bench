@@ -5,6 +5,7 @@ import { escape as escape_array_assign } from "./escape_array_assign.js";
 import { escape as escape_assign } from "./escape_assign.js";
 import { escape as escape_from_assign } from "./escape_from_assign.js";
 import { escape as escape_from_clone_assign } from "./escape_from_clone_assign.js";
+import { escape as escape_map } from "./escape_map.js";
 import { escape as escape_push } from "./escape_push.js";
 import { escape as escape_slice_assign } from "./escape_slice_assign.js";
 import { escape as escape_spread_assign } from "./escape_spread_assign.js";
@@ -15,6 +16,7 @@ const escapes = {
   escape_assign,
   escape_from_assign,
   escape_from_clone_assign,
+  escape_map,
   escape_push,
   escape_slice_assign,
   escape_spread_assign,
