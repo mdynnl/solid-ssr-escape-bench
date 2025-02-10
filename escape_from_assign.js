@@ -3,9 +3,9 @@ export function escape(s, attr) {
   if (t !== "string") {
     if (!attr && t === "function") return escape(s());
     if (!attr && Array.isArray(s)) {
-      s = Array.from({ length: s.length });
+      const arr = Array.from({ length: s.length });
       for (let i = 0; i < s.length; i++) s[i] = escape(s[i]);
-      return s;
+      return arr;
     }
     if (attr && t === "boolean") return String(s);
     return s;
