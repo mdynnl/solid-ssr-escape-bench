@@ -29,7 +29,7 @@ barplot(() => {
       bench(name, function* (state) {
         const size = state.get("size");
         yield {
-          [0]: () => Array.from({ length: size }, (_, i) => Array.from({ length: 10 }, (_, j) => [i, j])),
+          [0]: () => Array.from({ length: size }, (_, i) => Array.from({ length: 2 }, (_, j) => [i, j])),
           bench: (s) => fn(s),
         };
       }).range("size", 1, 1024);
